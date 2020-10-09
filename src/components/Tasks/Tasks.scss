@@ -26,8 +26,10 @@
 
 &__items {
     margin: 30px;
+    margin-left: 0px;
     &-row {
         display: flex;
+        margin-bottom: 15px;
         align-items: center;
         input {
            margin-left: 15px; 
