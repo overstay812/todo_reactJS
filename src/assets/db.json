@@ -2,7 +2,7 @@
   "lists": [
     {
       "id": 1,
-      "name": "Продажи",
+      "name": "123123",
       "colorId": 5
     },
     {
@@ -21,24 +21,14 @@
       "colorId": 2
     },
     {
-      "id": 5,
-      "name": "Личное",
-      "colorId": 1
+      "name": "cfvbc",
+      "colorId": 7,
+      "id": 5
     },
     {
-      "name": "уаывав",
+      "name": "цукцук",
       "colorId": 1,
       "id": 6
-    },
-    {
-      "name": "ываыв",
-      "colorId": 1,
-      "id": 7
-    },
-    {
-      "name": "ываыв",
-      "colorId": 1,
-      "id": 8
     }
   ],
   "tasks": [

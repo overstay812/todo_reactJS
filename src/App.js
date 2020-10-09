@@ -9,6 +9,7 @@ function App() {
 
   const [lists, setLists] = useState(null)
   const [colors, setColors] = useState(null)
+  const [activeItem, setActiveItem] = useState(null)
 
   useEffect(() => {
     Axios.get('http://localhost:3001/lists?_expand=color&_embed=tasks')
@@ -23,6 +24,16 @@ function App() {
 
   const onAddList = obj => {
     const newLists = [...lists, obj]
+    setLists(newLists)
+  }
+
+  const onEditListTitle = (id, title) => {
+    const newLists = lists.map(item=> {
+if (item.id === id) {
+  item.name = title
+}
+return item
+    })
     setLists(newLists)
   }
 
@@ -47,6 +58,10 @@ function App() {
               const newLists = lists.filter(item => item.id !== id);
               setLists(newLists);
             }}
+            onClickItem={item => {
+              setActiveItem(item)
+            }}
+            activeItem={activeItem}
             isRemovable
           />
         ) : (
@@ -56,8 +71,8 @@ function App() {
         <AddButtonList onAdd={onAddList} colors={colors} />
       </div>
       <div className="todo__tasks">
-        {lists && <Tasks list={lists[1]} />}
-        </div>
+        {lists && activeItem && <Tasks list={activeItem} onEditTitle={onEditListTitle}/>}
+      </div>
     </div>
   );
 }
