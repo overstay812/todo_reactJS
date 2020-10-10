@@ -24,10 +24,44 @@
     }
   }
 
-&__items {
+  &__form {
+    margin-top: 20px;
+
+&-block {
+  .button {
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+}
+
+    &-new {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      opacity: 0.4;
+      transition: opacity 0.15s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      img {
+        width: 16px;
+        height: 16px;
+        margin-left: 4px;
+      }
+
+      span {
+        font-size: 16px;
+        margin-left: 19px;
+      }
+    }
+  }
+
+  &__items {
     margin: 30px;
 
-    h2{
+    h2 {
       font-family: Montserrat;
       font-weight: bold;
       font-size: 22px;
@@ -35,42 +69,41 @@
       position: absolute;
       left: 50%;
       top: 50%;
-
     }
 
     margin-left: 0px;
     &-row {
-        display: flex;
-        margin-bottom: 15px;
-        align-items: center;
-        input {
-           margin-left: 15px; 
-           border: 0;
-           font-size: 16px;
-           width: 100%;
-        }
+      display: flex;
+      margin-bottom: 15px;
+      align-items: center;
+      input {
+        margin-left: 15px;
+        border: 0;
+        font-size: 16px;
+        width: 100%;
+      }
     }
-}
+  }
 
   .checkbox {
     input {
       display: none;
     }
 
-.svg {
-    transition: background-color 0.15s ease-in-out,
-     border-color 0.15s ease-in-out ;
-    path {
+    .svg {
+      transition: background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+      path {
         stroke: #f2f2f2;
+      }
     }
-}
 
     input:checked + label {
       background-color: #4dd599;
       border-color: #4dd599;
 
       svg {
-          opacity: 1;
+        opacity: 1;
         path {
           stroke: #fff;
         }
@@ -100,10 +133,10 @@
       width: 20px;
       height: 20px;
       cursor: pointer;
-      transition: background-color 0.15s ease-in-out ;
+      transition: background-color 0.15s ease-in-out;
 
       svg {
-        opacity: 0; 
+        opacity: 0;
 
         left: 1px;
       }

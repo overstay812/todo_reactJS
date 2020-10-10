@@ -7,7 +7,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
-
 }
 body {
   background-color: cyan;
@@ -24,7 +23,7 @@ body {
   box-shadow: 1px 2px 20px #f3f3f3;
   border-radius: 10px;
   border-right: 1px solid #f1f1f1;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   &__sidebar {
     background-color: #f4f6f8;
@@ -33,13 +32,11 @@ body {
     border-right: 1px solid #f1f1f1;
     padding: 60px 20px;
   }
- &__tasks {
-   flex: 1;
-   padding: 60px;
- }
+  &__tasks {
+    flex: 1;
+    padding: 60px;
+  }
 }
-
-
 
 .button {
   background: #4dd599;
@@ -48,12 +45,29 @@ body {
   border: 0;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 14px;
 
   &:hover {
     background: darken(#4dd599, 6%);
   }
   &:active {
     background: darken(#4dd599, 10%);
+  }
+
+&:disabled {
+  background: #d8d8d8;
+}
+  
+  &--grey {
+    background: #f4f6f8;
+    color: #444444;
+
+    &:hover {
+      background: darken(#f4f6f8, 3%);
+    }
+    &:active {
+      background: darken(#f4f6f8, 6%);
+    }
   }
 }
 .field {
@@ -63,9 +77,9 @@ body {
   border-radius: 4px;
   padding: 8px 12px;
   width: 100%;
-  
+  font-size: 14px;
 
   &:focus {
-    border-color: #dbdbdb
+    border-color: #dbdbdb;
   }
 }
