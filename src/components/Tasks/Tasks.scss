@@ -1,4 +1,13 @@
 .tasks {
+
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+  
+a {
+  text-decoration: none;
+}
+
   &__title {
     font-family: Montserrat;
     font-weight: bold;
@@ -7,6 +16,7 @@
     color: #64c4ed;
     padding-bottom: 20px;
     border-bottom: 1px solid #f2f2f2;
+
 
     &:hover {
       img {
@@ -71,12 +81,50 @@
       top: 50%;
     }
 
-    margin-left: 0px;
+    // margin-left: 0px;
     &-row {
       display: flex;
       margin-bottom: 15px;
       align-items: center;
-      input {
+
+      &:hover &-actions {
+        opacity: 1;
+      }
+
+      &-actions {
+        display: flex;
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out;
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          background-color: lighten(#f4f6f8, 2%);
+          border-radius: 6px;
+          margin-left: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: darken(#f4f6f8, 2%);
+            svg {
+              opacity: 0.8;
+            }
+          }
+
+          svg {
+            width: 11px;
+            height: 11px;
+            opacity: 0.4;
+          }
+        }
+      }
+
+
+      
+      p{
         margin-left: 15px;
         border: 0;
         font-size: 16px;

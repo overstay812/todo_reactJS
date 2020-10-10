@@ -1,119 +1,28 @@
 {
   "lists": [
     {
-      "id": 1,
-      "name": "123123",
-      "colorId": 5
+      "name": "drink",
+      "colorId": 5,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Фронтенд",
-      "colorId": 4
-    },
-    {
-      "id": 3,
-      "name": "Фильмы и сериалы",
-      "colorId": 3
-    },
-    {
-      "id": 4,
-      "name": "Книги",
-      "colorId": 2
-    },
-    {
-      "name": "cfvbc",
-      "colorId": 7,
-      "id": 5
-    },
-    {
-      "name": "цукцук",
-      "colorId": 1,
-      "id": 6
-    },
-    {
-      "name": "jnbm,nbm",
-      "colorId": 1,
-      "id": 7
+      "name": "sdfsdfs",
+      "colorId": 2,
+      "id": 2
     }
   ],
   "tasks": [
     {
-      "id": 1,
-      "listId": 2,
-      "text": "Изучить JavaScript",
-      "completed": false
-    },
-    {
-      "id": 2,
-      "listId": 2,
-      "text": "Изучить паттерны проектирования",
-      "completed": false
-    },
-    {
-      "id": 3,
-      "listId": 2,
-      "text": "ReactJS Hooks (useState, useReducer, useEffect и т.д.)",
-      "completed": true
-    },
-    {
-      "id": 4,
-      "listId": 2,
-      "text": "Redux (redux-observable, redux-saga)",
-      "completed": false
-    },
-    {
-      "listId": 2,
-      "text": "dfhgfh",
-      "completed": false,
-      "id": 5
-    },
-    {
       "listId": 1,
-      "text": "xvxcvcv",
-      "completed": false,
-      "id": 6
+      "text": "juce",
+      "completed": true,
+      "id": 2
     },
     {
-      "listId": 1,
-      "text": "dfgfgfd",
-      "completed": false,
-      "id": 7
-    },
-    {
-      "listId": 1,
-      "text": "dfgdfg",
-      "completed": false,
-      "id": 8
-    },
-    {
-      "listId": 1,
+      "listId": 2,
       "text": "sdfsdf",
       "completed": false,
-      "id": 9
-    },
-    {
-      "listId": 2,
-      "text": "asdsad",
-      "completed": false,
-      "id": 10
-    },
-    {
-      "listId": 3,
-      "text": "zxc",
-      "completed": false,
-      "id": 11
-    },
-    {
-      "listId": 2,
-      "text": "asdasd",
-      "completed": false,
-      "id": 12
-    },
-    {
-      "listId": 4,
-      "text": "прочитать задачу трех тел",
-      "completed": false,
-      "id": 13
+      "id": 3
     }
   ],
   "colors": [

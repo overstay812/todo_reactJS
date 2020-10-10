@@ -26,7 +26,7 @@ const AddTaskForm = ({ list, onAddTask }) => {
       onAddTask(list.id, data);
       toggleFormVisible();
     })
-    .catch(()=> alert('Ошибка при добавлении задачи!'))
+    .catch((e)=> alert('Ошибка при добавлении задачи!'))
     .finally(()=> setIsLoading(false))
   };
   return (

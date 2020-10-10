@@ -36,14 +36,14 @@ const AddButtonList = ({ colors, onAdd }) => {
       colorId: selectedColor,
     })
       .then(({ data }) => {
-        const color = colors.filter((item) => item.id === selectedColor)[0]
-          .name;
-        const listObj = { ...data, color: { name: color } };
+        const color = colors.filter((item) => item.id === selectedColor)[0];
+          
+        const listObj = { ...data, color, tasks: [] };
         onAdd(listObj);
         onClose();
       })
       .catch(()=> {alert('Ошибка при добавлении списка!')})
-      .finally(() => setIsLoading(false));
+      .finally(() => setIsLoading(false))
   };
 
   return (
