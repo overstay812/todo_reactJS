@@ -17,7 +17,7 @@ const List = ({
 }) => {
   const removeList = (item) => {
     if (window.confirm("Вы действительно хотите удалить список?")) {
-      Axios.delete("http://localhost:3001/lists/" + item.id).then(() => {
+      Axios.delete("https://my-json-server.typicode.com/overstay812/todo_reactJS/lists/" + item.id).then(() => {
         onRemove(item.id);
       });
     }

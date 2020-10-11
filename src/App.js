@@ -15,11 +15,11 @@ function App() {
   let location = useLocation()
 
   useEffect(() => {
-    Axios.get('http://localhost:3001/lists?_expand=color&_embed=tasks')
+    Axios.get('https://my-json-server.typicode.com/overstay812/todo_reactJS/lists?_expand=color&_embed=tasks')
       .then(({ data }) => {
         setLists(data)
       });
-    Axios.get('http://localhost:3001/colors')
+    Axios.get('https://my-json-server.typicode.com/overstay812/todo_reactJS/colors')
       .then(({ data }) => {
         setColors(data)
       })
@@ -50,7 +50,7 @@ function App() {
         return list
       })
       setLists(newLists)
-      Axios.patch("http://localhost:3001/tasks/" + taskObj.id, {
+      Axios.patch("https://my-json-server.typicode.com/overstay812/todo_reactJS/tasks/" + taskObj.id, {
         text: newTaskText
       })
         .catch(() => alert("не удалось обновить задачу"))
@@ -67,7 +67,7 @@ function App() {
         return item
       })
       setLists(newLists)
-      Axios.delete("http://localhost:3001/tasks/" + taskId)
+      Axios.delete("https://my-json-server.typicode.com/overstay812/todo_reactJS/tasks/" + taskId)
         .catch(() => alert("не удалось удалить задачу"))
     }
   }
@@ -96,7 +96,7 @@ function App() {
     })
     setLists(newList)
     Axios
-      .patch('http://localhost:3001/tasks/' + taskId, {
+      .patch('https://my-json-server.typicode.com/overstay812/todo_reactJS/tasks/' + taskId, {
         completed
       })
       .catch(() => {

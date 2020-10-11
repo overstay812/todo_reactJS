@@ -19,7 +19,7 @@ const Tasks = ({
     const newTitle = window.prompt("Название списка", list.name);
     if (newTitle) {
       onEditTitle(list.id, newTitle);
-      Axios.patch("http://localhost:3001/lists/" + list.id, {
+      Axios.patch("https://my-json-server.typicode.com/overstay812/todo_reactJS/lists/" + list.id, {
         name: newTitle,
       }).catch(() => alert("не удалось обновить название списка"));
     }
@@ -27,7 +27,7 @@ const Tasks = ({
 
   const onRemove = (taskId) => {
     if (window.confirm("Вы действительно хотите удалить задачу?")) {
-      Axios.delete("http://localhost:3001/tasks/" + taskId).catch(() =>
+      Axios.delete("https://my-json-server.typicode.com/overstay812/todo_reactJS/tasks/" + taskId).catch(() =>
         alert("не удалось удалить задачу")
       );
     }
