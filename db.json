@@ -63,14 +63,8 @@
       "completed": false
     },
     {
-      "listId": 2,
-      "text": "123",
-      "completed": false,
-      "id": 5
-    },
-    {
       "listId": 1,
-      "text": "test",
+      "text": "Продать ноутбук",
       "completed": false,
       "id": 6
     },
